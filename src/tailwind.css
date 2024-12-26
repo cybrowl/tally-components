@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Nano Sans';
+    src: url('/src/lib/assets/NotoSans-VariableFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
