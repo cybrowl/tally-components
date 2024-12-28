@@ -1,9 +1,9 @@
 <script context="module">
-	import HomePage from '../../lib/pages/HomePage.svelte';
+	import TeamsPage from '../../lib/pages/TeamsPage.svelte';
 
 	export const meta = {
-		title: 'Page / Home',
-		component: HomePage
+		title: 'Page / Teams',
+		component: TeamsPage
 	};
 </script>
 
@@ -12,7 +12,7 @@
 </script>
 
 <Template let:args>
-	<HomePage {...args} />
+	<TeamsPage {...args} />
 </Template>
 
 <Story

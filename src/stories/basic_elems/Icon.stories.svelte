@@ -1,5 +1,5 @@
 <script context="module">
-	import Icon from '../lib/components/basic_elements/Icon.svelte';
+	import Icon from '../../lib/components/basic_elements/Icon.svelte';
 
 	export const meta = {
 		title: 'Basic Elems / Icons',

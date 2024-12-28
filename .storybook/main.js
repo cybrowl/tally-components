@@ -1,8 +1,5 @@
 const config = {
-	stories: [
-		'../src/stories/*.stories.@(js|ts|svelte)',
-		'../src/stories/pages/*.stories.@(js|ts|svelte)'
-	],
+	stories: ['../src/stories/*/*.stories.@(js|ts|svelte)'],
 
 	addons: [
 		'@storybook/addon-links',
