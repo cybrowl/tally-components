@@ -1,37 +1,13 @@
 <script>
 	import {createEventDispatcher, onMount} from 'svelte';
 	import Icon from '../components/basic_elements/Icon.svelte';
-	import MainToolBar from '../components/home/MainToolbar.svelte';
 
 	const dispatch = createEventDispatcher();
 
 	let value = '';
-
-	export let has_chats = false;
 </script>
 
-<div class="grid_layout">
-	<div class="read_main_layout">
-		{#if has_chats === true}
-			<Icon
-				name="poro_logo"
-				class="cursor_default"
-				size="12rem"
-				scale="1"
-				viewSize={{
-					width: 221,
-					height: 59
-				}}
-			/>
-		{/if}
-	</div>
-	<div class="write_main_layout">
-		<div class="toolbar">
-			<MainToolBar />
-		</div>
-		<div class="editor_root"></div>
-	</div>
-</div>
+<div class="grid_layout"></div>
 
 <!-- Mobile Not Supported -->
 <div class="grid lg:hidden h-screen place-items-center text-white text-4xl">
