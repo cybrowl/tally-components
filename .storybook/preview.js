@@ -8,7 +8,7 @@ const preview = {
 			dark: {
 				...themes.dark,
 				brandImage:
-					'https://github.com/cybrowl/tally-components/blob/main/src/lib/assets/code_gov_logo.jpg'
+					'https://github.com/cybrowl/tally-components/blob/main/src/lib/assets/code_gov_logo.png'
 			},
 			light: {...themes.normal, appBg: 'white'},
 			stylePreview: true,
