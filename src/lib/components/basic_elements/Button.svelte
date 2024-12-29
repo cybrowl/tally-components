@@ -20,7 +20,7 @@
 	 * Optional fallback text label if no slot is provided.
 	 * e.g. <MyButton label="Click me" />
 	 */
-	export let label = '';
+	export let label = 'Click me';
 
 	const dispatch = createEventDispatcher();
 
