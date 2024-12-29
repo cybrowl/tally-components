@@ -25,6 +25,7 @@
 	</div>
 
 	<div class="team-selection-layout">
+		<h1 class="text-2xl text-gray-300">Teams</h1>
 		{#each teams as team, i}
 			<Tab index={i} activeTab={selectedTeamIndex} on:select={handleTabChange}>
 				{`# ${team}`}
@@ -32,6 +33,7 @@
 		{/each}
 	</div>
 	<div class="resizable-layout">
+		<h1 class="text-2xl text-gray-300 mb-4">Members</h1>
 		<Card title="cyberowl" content={['principal: 1234567']} />
 	</div>
 </div>
