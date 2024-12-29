@@ -28,6 +28,7 @@
 			</Tab>
 		{/each}
 	</div>
+	<div class="resizable-layout"></div>
 </div>
 
 <!-- Mobile Not Supported -->
@@ -51,6 +52,10 @@
 
 	.team-selection-layout {
 		@apply col-start-2 col-end-4 flex flex-col gap-4;
+	}
+
+	.resizable-layout {
+		@apply col-start-auto;
 	}
 
 	.main-toolbar-layout {
