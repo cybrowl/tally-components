@@ -1,5 +1,6 @@
-<!-- Card.svelte -->
 <script>
+	import Icon from '../components/basic_elements/Icon.svelte';
+
 	export let title = 'Card Title';
 	export let content = [
 		'First item in the list.',
@@ -21,20 +22,22 @@
 
 	<!-- Card Content -->
 	<div class="px-6 py-4">
-		<ul class="list-disc list-inside space-y-2">
+		<ul class="list-inside space-y-2">
 			{#each content as item}
-				<li class="text-base text-grey">{item}</li>
+				<li class="text-base text-mist-grey">{item}</li>
 			{/each}
 		</ul>
 	</div>
 
 	<!-- Card Footer -->
-	<div class="px-6 py-4 border-t border-smoky-grey">
-		<button
-			class="bg-primary-purple hover:bg-tulip-purple text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-300"
-			on:click={onClick}
-		>
-			{buttonText}
-		</button>
+	<div class="px-6 py-4 border-t border-smoky-grey flex justify-end">
+		<Icon
+			name="trash"
+			class="fill_tulip_purple"
+			viewSize={{
+				width: 40,
+				height: 40
+			}}
+		/>
 	</div>
 </div>

@@ -18,3 +18,7 @@ export const dfinity_logo = `
 </clipPath>
 </defs>
 `;
+
+export const trash = `<rect width="40" height="40" rx="6" /><path fill-rule="evenodd" clip-rule="evenodd" d="M23.3333
+8L24.6666 9.33333H29.3333V12H10.6666V9.33333H15.3333L16.6666 8H23.3333ZM12 29.3333C12 30.8 13.2 32 14.6666 32H25.3333C26.8
+32 28 30.8 28 29.3333V13.3333H12V29.3333ZM14.6666 16H25.3333V29.3333H14.6666V16Z" fill="#FEFEFF"/>`;

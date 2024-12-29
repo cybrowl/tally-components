@@ -28,3 +28,17 @@
 		}
 	}}
 />
+
+<Story
+	name="trash"
+	args={{
+		name: 'trash',
+		class: 'cursor_pointer',
+		size: '4rem',
+		scale: 1,
+		viewSize: {
+			width: 40,
+			height: 40
+		}
+	}}
+/>

@@ -72,6 +72,9 @@
 	.fill_white {
 		@apply fill-white;
 	}
+	.fill_tulip_purple {
+		@apply fill-stone-grey;
+	}
 	svg:focus {
 		outline: none;
 		box-shadow: none;
