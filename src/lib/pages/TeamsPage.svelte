@@ -2,8 +2,10 @@
 	import Nav from '../components/basic_elements/Nav.svelte';
 	import Button from '../components/basic_elements/Button.svelte';
 	import Tab from '../components/basic_elements/Tab.svelte';
+	import Card from '../components/Card.svelte';
 
 	export let teams = [];
+
 	let selectedTeamIndex = 0;
 
 	function handleTabChange(e) {
@@ -19,6 +21,7 @@
 
 	<div class="main-toolbar-layout">
 		<Button label="Create Team" />
+		<Button label="Add Member" variant="secondary" />
 	</div>
 
 	<div class="team-selection-layout">
@@ -28,7 +31,9 @@
 			</Tab>
 		{/each}
 	</div>
-	<div class="resizable-layout"></div>
+	<div class="resizable-layout">
+		<Card title="cyberowl" content={['principal: 1234567']} />
+	</div>
 </div>
 
 <!-- Mobile Not Supported -->
@@ -55,11 +60,11 @@
 	}
 
 	.resizable-layout {
-		@apply col-start-auto;
+		@apply col-start-4 col-end-13;
 	}
 
 	.main-toolbar-layout {
-		@apply col-start-2 col-end-12 mt-4;
+		@apply col-start-2 col-end-12 mt-4 gap-4;
 		@apply flex;
 		@apply justify-end;
 	}
