@@ -14,7 +14,7 @@
 		<h1 class="text-2xl text-gray-300 mb-4">Add Neuron</h1>
 		<div class="mb-4 flex flex-col space-y-4">
 			<Input label="Neuron ID" />
-			<Input label="Neuron ID" />
+			<Input label="Name" />
 			<br />
 			<Button label="Add" />
 		</div>
