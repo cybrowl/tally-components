@@ -18,6 +18,6 @@
 <Story
 	name="default"
 	args={{
-		has_chats: true
+		teams: ['CodeGov', 'Zenith']
 	}}
 />

@@ -7,7 +7,7 @@ const config = {
 				sans: ['Nano Sans', 'sans-serif']
 			},
 			colors: {
-				backdrop: '#1B1A22',
+				backdrop: '#080812',
 				'black-a': '#212029',
 				'dark-grey': '#32313D',
 				'smoky-grey': '#454352',

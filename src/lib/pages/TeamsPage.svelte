@@ -1,11 +1,15 @@
 <script>
-	import {createEventDispatcher, onMount} from 'svelte';
 	import Nav from '../components/basic_elements/Nav.svelte';
 	import Button from '../components/basic_elements/Button.svelte';
+	import Tab from '../components/basic_elements/Tab.svelte';
 
-	const dispatch = createEventDispatcher();
+	export let teams = [];
+	let selectedTeamIndex = 0;
 
-	let value = '';
+	function handleTabChange(e) {
+		console.log('e.detail: ', e.detail);
+		selectedTeamIndex = e.detail;
+	}
 </script>
 
 <div class="grid-layout">
@@ -15,6 +19,14 @@
 
 	<div class="main-toolbar-layout">
 		<Button label="Create Team" />
+	</div>
+
+	<div class="team-selection-layout">
+		{#each teams as team, i}
+			<Tab index={i} activeTab={selectedTeamIndex} on:select={handleTabChange}>
+				{`# ${team}`}
+			</Tab>
+		{/each}
 	</div>
 </div>
 
@@ -35,6 +47,10 @@
 
 	.nav-layout {
 		@apply col-start-2 col-end-12;
+	}
+
+	.team-selection-layout {
+		@apply col-start-2 col-end-4 flex flex-col gap-4;
 	}
 
 	.main-toolbar-layout {
