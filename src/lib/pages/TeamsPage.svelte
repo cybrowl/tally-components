@@ -44,11 +44,6 @@
 </div>
 
 <style lang="postcss">
-	:global(.carta-font-code) {
-		font-family: '...', monospace;
-		font-size: 1.1rem;
-	}
-
 	.grid-layout {
 		@apply hidden lg:grid grid-cols-12;
 	}
