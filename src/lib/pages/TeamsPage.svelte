@@ -32,7 +32,7 @@
 			</Tab>
 		{/each}
 	</div>
-	<div class="resizable-layout">
+	<div class="members-layout">
 		<h1 class="text-2xl text-gray-300 mb-4">Members</h1>
 		<Card title="cyberowl" content={['principal: 1234567']} />
 	</div>
@@ -61,7 +61,7 @@
 		@apply col-start-2 col-end-4 flex flex-col gap-4;
 	}
 
-	.resizable-layout {
+	.members-layout {
 		@apply col-start-4 col-end-13;
 	}
 
