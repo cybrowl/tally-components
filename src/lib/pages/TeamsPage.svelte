@@ -34,7 +34,17 @@
 	</div>
 	<div class="members-layout">
 		<h1 class="text-2xl text-gray-300 mb-4">Members</h1>
-		<Card title="cyberowl" content={['principal: 1234567']} />
+
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+			<Card
+				title="cyberowl"
+				content={['principal: evdr7-7ku9e-4l1ha-txj76-cai']}
+			/>
+			<Card
+				title="wenzel"
+				content={['principal: 4w71c-h03f5-hy5ia-1x559-cai']}
+			/>
+		</div>
 	</div>
 </div>
 
