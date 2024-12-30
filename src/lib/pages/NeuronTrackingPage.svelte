@@ -66,8 +66,8 @@
 		@apply col-start-2 col-end-5 mx-8;
 	}
 
-	/* Tracking layout spanning columns 5–13 */
+	/* Tracking layout spanning columns 5–12 */
 	.neuron-tracking-layout {
-		@apply col-start-5 col-end-13;
+		@apply col-start-5 col-end-12;
 	}
 </style>
